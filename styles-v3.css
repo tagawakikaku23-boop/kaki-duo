@@ -2,3 +2,6 @@
 @media(max-width:600px){.fruit-stage{justify-content:flex-start;padding-top:16px}.fruit-visual{flex-shrink:0}}
 @media(max-width:600px){.fruit-visual{width:94vw}}
 .feature-grid .phrase{display:inline-block;white-space:nowrap}
+
+/* Autumn gift headline: keep the full phrase readable on narrow screens. */
+@media(max-width:600px){h1{font-size:clamp(28px,9.4vw,42px)}}
