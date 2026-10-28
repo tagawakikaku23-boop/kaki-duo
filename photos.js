@@ -9,7 +9,7 @@
   const clamp = value => Math.min(1,Math.max(0,value));
   function update() {
     frame = false;
-    if (motion.matches) return;
+    if (motion.matches || !scene) return;
     const rect = scene.getBoundingClientRect();
     if(rect.bottom < 0 || rect.top > innerHeight * 1.2) return;
     const progress = clamp((innerHeight * .85 - rect.top) / (innerHeight * .95));
